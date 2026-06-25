@@ -2,87 +2,84 @@
 {
     partial class MainForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            rtbChat = new RichTextBox();
-            txtInput = new TextBox();
-            btnSend = new Button();
+            rtbChat = new System.Windows.Forms.RichTextBox();
+            txtInput = new System.Windows.Forms.TextBox();
+            btnSend = new System.Windows.Forms.Button();
+            btnTasks = new System.Windows.Forms.Button();
+            btnQuiz = new System.Windows.Forms.Button();
             SuspendLayout();
-            // 
+
             // rtbChat
-            // 
-            rtbChat.Dock = DockStyle.Top;
-            rtbChat.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rtbChat.Location = new Point(0, 0);
+            rtbChat.Location = new System.Drawing.Point(0, 0);
+            rtbChat.Size = new System.Drawing.Size(800, 355);
             rtbChat.Name = "rtbChat";
             rtbChat.ReadOnly = true;
-            rtbChat.Size = new Size(800, 96);
-            rtbChat.TabIndex = 0;
-            rtbChat.Text = "";
+            rtbChat.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            rtbChat.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             rtbChat.TextChanged += richTextBox1_TextChanged;
-            // 
+
             // txtInput
-            // 
-            txtInput.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtInput.Location = new Point(12, 413);
+            txtInput.Location = new System.Drawing.Point(12, 368);
+            txtInput.Size = new System.Drawing.Size(570, 25);
             txtInput.Name = "txtInput";
-            txtInput.Size = new Size(649, 25);
-            txtInput.TabIndex = 1;
+            txtInput.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             txtInput.TextChanged += txtInput_TextChanged;
             txtInput.KeyDown += txtInput_KeyDown_1;
-            // 
+
             // btnSend
-            // 
-            btnSend.Location = new Point(683, 413);
+            btnSend.Location = new System.Drawing.Point(594, 366);
+            btnSend.Size = new System.Drawing.Size(75, 28);
             btnSend.Name = "btnSend";
-            btnSend.Size = new Size(75, 23);
-            btnSend.TabIndex = 2;
             btnSend.Text = "Send";
             btnSend.UseVisualStyleBackColor = true;
             btnSend.Click += btnSend_Click;
-            // 
+
+            // btnTasks
+            btnTasks.Location = new System.Drawing.Point(594, 405);
+            btnTasks.Size = new System.Drawing.Size(90, 28);
+            btnTasks.Name = "btnTasks";
+            btnTasks.Text = "📋 Tasks";
+            btnTasks.UseVisualStyleBackColor = true;
+            btnTasks.Click += btnTasks_Click;
+
+            // btnQuiz
+            btnQuiz.Location = new System.Drawing.Point(694, 405);
+            btnQuiz.Size = new System.Drawing.Size(90, 28);
+            btnQuiz.Name = "btnQuiz";
+            btnQuiz.Text = "🎯 Quiz";
+            btnQuiz.UseVisualStyleBackColor = true;
+            btnQuiz.Click += btnQuiz_Click;
+
             // MainForm
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnSend);
-            Controls.Add(txtInput);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(800, 450);
             Controls.Add(rtbChat);
+            Controls.Add(txtInput);
+            Controls.Add(btnSend);
+            Controls.Add(btnTasks);
+            Controls.Add(btnQuiz);
             Name = "MainForm";
-            Text = "MainForm";
+            Text = "CyberSecurity Awareness Chatbot";
             ResumeLayout(false);
             PerformLayout();
         }
 
-        #endregion
-
-        private RichTextBox rtbChat;
-        private TextBox txtInput;
-        private Button btnSend;
+        private System.Windows.Forms.RichTextBox rtbChat;
+        private System.Windows.Forms.TextBox txtInput;
+        private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.Button btnTasks;
+        private System.Windows.Forms.Button btnQuiz;
     }
 }
