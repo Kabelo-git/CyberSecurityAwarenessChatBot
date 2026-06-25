@@ -78,7 +78,8 @@ namespace CyberSecurityAwarenessChatBot
                 return "That's great curiosity! Cybersecurity is very important.";
             if (lower.Contains("frustrated"))
                 return "I understand. I'll simplify things for you.";
-
+            if (lower.Contains("happy") || lower.Contains("great") || lower.Contains("good"))
+                return "Glad to hear it! Stay that way by keeping your accounts secure. Want a cybersecurity tip?";
             // --- MEMORY ---
             if (lower.Contains("my name is"))
             {
