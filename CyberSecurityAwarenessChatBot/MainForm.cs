@@ -165,8 +165,10 @@ namespace CyberSecurityAwarenessChatBot
         public MainForm()
         {
             InitializeComponent();
-            rtbChat.AppendText("CyberSecurity Bot: Hello! Ask me about passwords, scams, privacy, or phishing.\r\n");
-            rtbChat.AppendText("CyberSecurity Bot: You can also type 'quiz' to test your knowledge or 'tasks' to manage your tasks.\r\n\r\n");
+            rtbChat.AppendText("CyberSecurity Bot: Welcome to the Cybersecurity Awareness Chatbot!\r\n");
+            rtbChat.AppendText("CyberSecurity Bot: Ask me about passwords, phishing, scams, privacy, VPNs, or malware.\r\n");
+            rtbChat.AppendText("CyberSecurity Bot: Type 'quiz' to test your knowledge or 'tasks' to manage your tasks.\r\n");
+            rtbChat.AppendText("CyberSecurity Bot: Type 'show activity log' to see what I have done for you.\r\n\r\n");
         }
 
         private void btnSend_Click(object sender, EventArgs e)
