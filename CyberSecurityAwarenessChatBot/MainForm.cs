@@ -145,7 +145,7 @@ namespace CyberSecurityAwarenessChatBot
             if (lower.Contains("social engineering"))
                 return "Social engineering manipulates people into revealing confidential information. Always verify requests!";
 
-            return "I'm not sure I understand. Try asking about passwords, phishing, scams, privacy, or type 'quiz' to test your knowledge!";
+            return "return \"I'm not sure I understand. Try asking about:\\n• Passwords or 2FA\\n• Phishing or scams\\n• Privacy or VPN\\n• Malware or firewall\\nOr type 'quiz' to test your knowledge, 'tasks' to manage tasks, or 'show activity log' to see recent actions!\";";
         }
 
         private void OpenTaskForm()
